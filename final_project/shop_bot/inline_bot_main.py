@@ -12,7 +12,7 @@ def start(message):
 
     inline_buttons = [types.InlineKeyboardButton(text=button, switch_inline_query_current_chat=button) for button in buttons]
     kb.add(*inline_buttons)
-    bot.send_message(message.chat.id, 'text', reply_markup=kb)
+    bot.send_message(message.chat.id, 'NEW FEATURE', reply_markup=kb)
 
 
 @bot.inline_handler(func=lambda query: True)
